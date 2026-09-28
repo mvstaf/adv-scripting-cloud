@@ -1,0 +1,5 @@
+InstanceId,InstanceType,State,PublicIpAddress,MonitoringState,InstanceName
+i-0df5ee58ff4d6abc3,t2.micro,running,52.87.207.176,disabled,N/A
+i-0b85bb49b7af59d5a,t2.micro,running,13.221.225.92,disabled,N/A
+i-0319f2b3ae965c1c1,t2.micro,running,44.202.47.139,disabled,Mustaf
+i-0071c6610069a24a0,t2.micro,running,44.211.138.209,disabled,Mustaf
