@@ -1,0 +1,15 @@
+1. Method to create a Lambda function:
+   boto3.client('lambda').create_function()
+
+2. Required parameters:
+   - FunctionName - name of the function
+   - Role - ARN of the IAM execution role (e.g. LabRole)
+   - Code - where the function's code comes from
+   - Runtime and Handler - also required when the code is a .zip package
+     (e.g. Runtime='python3.12', Handler='lambda_function.lambda_handler')
+
+3. Two ways to specify the Python code (Code parameter):
+   - ZipFile: the bytes of a .zip file containing the code
+       Code={'ZipFile': open('function.zip', 'rb').read()}
+   - S3Bucket + S3Key: a .zip file uploaded to S3
+       Code={'S3Bucket': 'my-bucket', 'S3Key': 'function.zip'}
